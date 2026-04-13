@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Resources | Blue Dog Counseling</title>
+  <meta name="description" content="Free resources for individuals navigating pet loss, veterinary professionals, shelter staff, and mental health providers. Hotlines, support groups, therapist directories, and educational content." />
+  <link rel="canonical" href="https://www.bluedogcounseling.com/resources" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" aria-labelledby="page-title">
+    <div class="container">
+      <p class="page-hero__label">Knowledge base</p>
+      <h1 id="page-title">Resources</h1>
+      <p>Free resources for individuals navigating pet loss, veterinary professionals, shelter and rescue staff, animal control officers, and mental health providers. All resources on this page are free and open to all.</p>
+    </div>
+  </section>
+
+  <!-- EDUCATIONAL CONTENT -->
+  <section class="bg-white" aria-labelledby="education-heading">
+    <div class="container">
+      <p class="section-label">Educational content</p>
+      <span class="section-rule" aria-hidden="true"></span>
+
+      <div style="display:flex; gap:0.75rem; flex-wrap:wrap; margin-bottom:3rem;">
+        <button onclick="filterResources('all')" class="filter-btn filter-btn--active" data-filter="all">All</button>
+        <button onclick="filterResources('moral-stress')" class="filter-btn" data-filter="moral-stress">Moral stress</button>
+        <button onclick="filterResources('secondary-trauma')" class="filter-btn" data-filter="secondary-trauma">Secondary trauma</button>
+        <button onclick="filterResources('pet-loss')" class="filter-btn" data-filter="pet-loss">Pet loss</button>
+        <button onclick="filterResources('euthanasia')" class="filter-btn" data-filter="euthanasia">Euthanasia</button>
+        <button onclick="filterResources('for-clinicians')" class="filter-btn" data-filter="for-clinicians">For clinicians</button>
+      </div>
+
+      <div id="resource-grid" class="card-grid" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));">
+
+        <article class="card resource-card" data-category="moral-stress secondary-trauma" aria-label="What is moral stress in veterinary medicine?">
+          <div style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap; margin-bottom:1rem;">
+            <span class="tag tag--primary">Moral stress</span>
+            <span class="tag tag--secondary">Secondary trauma</span>
+          </div>
+          <h3 class="card__title">What is moral stress in veterinary medicine?</h3>
+          <p class="card__body" style="margin-top:0.5rem;">Moral stress (also called moral distress or moral injury) occurs when a practitioner knows the ethically correct course of action but is prevented from taking it. In veterinary medicine, this frequently involves financial constraints, animal family member decisions that conflict with clinical judgment, and high-volume euthanasia in shelter settings.</p>
+          <p style="font-size:0.8rem; color:var(--gray-mid); margin-top:0.75rem;">For: Veterinarians, vet techs, shelter staff, and others in animal care roles</p>
+        </article>
+
+        <article class="card resource-card" data-category="secondary-trauma" aria-label="Recognizing secondary traumatic stress in your team">
+          <div style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap; margin-bottom:1rem;">
+            <span class="tag tag--primary">Secondary trauma</span>
+          </div>
+          <h3 class="card__title">Recognizing secondary traumatic stress in your team</h3>
+          <p class="card__body" style="margin-top:0.5rem;">Secondary traumatic stress (STS) develops through indirect exposure to the suffering of others. In animal care settings, this includes sustained contact with grieving clients, repeated exposure to animal suffering, and cumulative proximity to euthanasia. This resource outlines the specific indicators that distinguish STS from general work stress.</p>
+          <p style="font-size:0.8rem; color:var(--gray-mid); margin-top:0.75rem;">For: Practice managers, shelter directors, team leads</p>
+        </article>
+
+        <article class="card resource-card" data-category="euthanasia moral-stress" aria-label="Euthanasia decision fatigue: a clinical perspective">
+          <div style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap; margin-bottom:1rem;">
+            <span class="tag tag--primary">Euthanasia</span>
+            <span class="tag tag--secondary">Moral stress</span>
+          </div>
+          <h3 class="card__title">Euthanasia decision fatigue: a clinical perspective</h3>
+          <p class="card__body" style="margin-top:0.5rem;">Repeated euthanasia decisions create a specific form of decision fatigue compounded by moral weight. This is distinct from standard clinical decision fatigue. For veterinarians in high-volume practices or shelters performing frequent euthanasia, this accumulates over time and requires specific organizational and clinical responses.</p>
+          <p style="font-size:0.8rem; color:var(--gray-mid); margin-top:0.75rem;">For: Veterinarians, shelter staff, and others making euthanasia decisions</p>
+        </article>
+
+        <article class="card resource-card" data-category="pet-loss" aria-label="The clinical basis of animal loss grief">
+          <div style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap; margin-bottom:1rem;">
+            <span class="tag tag--primary">Pet loss</span>
+          </div>
+          <h3 class="card__title">The clinical basis of pet loss grief</h3>
+          <p class="card__body" style="margin-top:0.5rem;">Pet loss grief is clinically distinct from human loss grief and is frequently disenfranchised: the individual's experience is minimized by social norms that assign animals a lesser status in the grief hierarchy. Understanding this distinction is foundational to providing effective support, both as a clinician and as a veterinary professional interacting with clients.</p>
+          <p style="font-size:0.8rem; color:var(--gray-mid); margin-top:0.75rem;">For: Individuals, veterinarians, mental health providers</p>
+        </article>
+
+        <article class="card resource-card" data-category="for-clinicians pet-loss" aria-label="For mental health providers: supporting clients through animal loss">
+          <div style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap; margin-bottom:1rem;">
+            <span class="tag tag--primary">For clinicians</span>
+            <span class="tag tag--secondary">Pet loss</span>
+          </div>
+          <h3 class="card__title">Supporting clients through pet loss: a guide for mental health providers</h3>
+          <p class="card__body" style="margin-top:0.5rem;">Clinical training on the human-animal bond and pet loss grief is rare. This resource provides an orientation for therapists and counselors working with clients who present with pet loss, euthanasia trauma, or veterinary grief, and outlines where standard grief models require adaptation.</p>
+          <p style="font-size:0.8rem; color:var(--gray-mid); margin-top:0.75rem;">For: Therapists, counselors, social workers</p>
+        </article>
+
+        <article class="card resource-card" data-category="secondary-trauma moral-stress" aria-label="Building a grief-informed veterinary practice">
+          <div style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap; margin-bottom:1rem;">
+            <span class="tag tag--primary">Secondary trauma</span>
+            <span class="tag tag--secondary">Moral stress</span>
+          </div>
+          <h3 class="card__title">Building a grief-informed veterinary practice</h3>
+          <p class="card__body" style="margin-top:0.5rem;">A grief-informed practice acknowledges the emotional realities of veterinary work at the organizational level, provides structured support for staff, and integrates grief-aware communication into client interactions. This resource outlines what a grief-informed approach looks like in practice management terms.</p>
+          <p style="font-size:0.8rem; color:var(--gray-mid); margin-top:0.75rem;">For: Practice owners, clinic managers</p>
+        </article>
+
+        <article class="card resource-card" data-category="euthanasia for-clinicians" aria-label="Communicating around euthanasia: what clients need">
+          <div style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap; margin-bottom:1rem;">
+            <span class="tag tag--primary">Euthanasia</span>
+          </div>
+          <h3 class="card__title">Communicating around euthanasia: what clients need</h3>
+          <p class="card__body" style="margin-top:0.5rem;">Clients facing euthanasia decisions need specific kinds of support from the veterinary team: clear information, a structured opportunity for their emotional response, and guidance on the process. This resource outlines what effective communication looks like at each stage of the euthanasia conversation, from the initial discussion through aftercare.</p>
+          <p style="font-size:0.8rem; color:var(--gray-mid); margin-top:0.75rem;">For: Anyone in a client-facing animal care role</p>
+        </article>
+
+        <article class="card resource-card" data-category="pet-loss" aria-label="Navigating pet loss: a guide for individuals">
+          <div style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap; margin-bottom:1rem;">
+            <span class="tag tag--primary">Pet loss</span>
+          </div>
+          <h3 class="card__title">Navigating pet loss: a guide for individuals</h3>
+          <p class="card__body" style="margin-top:0.5rem;">Pet loss is a legitimate grief event. The process of navigating it varies depending on the circumstances: sudden death, euthanasia, terminal illness, or relinquishment each carry distinct dimensions. This resource provides an orientation to the process and outlines when professional consultation is appropriate.</p>
+          <p style="font-size:0.8rem; color:var(--gray-mid); margin-top:0.75rem;">For: Individuals navigating pet loss</p>
+        </article>
+
+      </div>
+
+      <div id="no-results" style="display:none; text-align:center; padding:4rem 0;">
+        <p style="color:var(--gray-mid);">No resources in this category yet. Check back or <a href="contact.html" style="color:var(--slate); text-decoration:underline;">contact us</a> with specific questions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOTLINES -->
+  <section class="bg-mint" aria-labelledby="hotlines-heading">
+    <div class="container">
+      <p class="section-label">Pet loss hotlines</p>
+      <span class="section-rule" aria-hidden="true"></span>
+      <h2 id="hotlines-heading" style="margin-bottom:2.5rem;">Phone and chat support</h2>
+
+      <div class="card-grid" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));">
+
+        <article class="card bg-white">
+          <h3 class="card__title">Cornell University College of Veterinary Medicine</h3>
+          <p class="card__body" style="margin-top:0.5rem;"><strong>Phone:</strong> (607) 218-7457<br><strong>Hours:</strong> Mon–Fri 6–9pm ET, Sat–Sun 12–3pm ET</p>
+          <a href="https://www.vet.cornell.edu/impact/community-impact/pet-loss-resources-and-support" target="_blank" rel="noopener" class="resource-link">More info ↗</a>
+        </article>
+
+        <article class="card bg-white">
+          <h3 class="card__title">Tufts University Cummings School of Veterinary Medicine</h3>
+          <p class="card__body" style="margin-top:0.5rem;"><strong>Phone:</strong> (508) 839-7966<br><strong>Hours:</strong> Mon–Thu 6–9pm ET</p>
+          <a href="https://vet.tufts.edu/pet-loss-support-helpline" target="_blank" rel="noopener" class="resource-link">More info ↗</a>
+        </article>
+
+        <article class="card bg-white">
+          <h3 class="card__title">University of Illinois CARE Helpline</h3>
+          <p class="card__body" style="margin-top:0.5rem;"><strong>Phone:</strong> (877) 394-2273<br><strong>Hours:</strong> Mon–Thu 7–9pm CT, Sun 1–5pm CT</p>
+          <a href="https://vetmed.illinois.edu/research-academics/care/" target="_blank" rel="noopener" class="resource-link">More info ↗</a>
+        </article>
+
+        <article class="card bg-white">
+          <h3 class="card__title">Chicago Veterinary Medical Association</h3>
+          <p class="card__body" style="margin-top:0.5rem;"><strong>Phone:</strong> (630) 325-1600<br><strong>Hours:</strong> Vary</p>
+          <a href="https://www.chicagovma.org/pet-loss-support/" target="_blank" rel="noopener" class="resource-link">More info ↗</a>
+        </article>
+
+        <article class="card bg-white">
+          <h3 class="card__title">UC Davis PAWSS Pet Loss Support</h3>
+          <p class="card__body" style="margin-top:0.5rem;"><strong>Phone:</strong> (800) 565-1526<br><strong>Hours:</strong> Mon–Fri 6:30–9:30pm PT</p>
+          <a href="https://www.vetmed.ucdavis.edu/hospital/pet-loss-support" target="_blank" rel="noopener" class="resource-link">More info ↗</a>
+        </article>
+
+        <article class="card bg-white">
+          <h3 class="card__title">Association for Pet Loss &amp; Bereavement Chat Room</h3>
+          <p class="card__body" style="margin-top:0.5rem;">Online chat-based support with trained volunteers. Available on a schedule posted to their site.</p>
+          <a href="https://www.aplb.org/chat-with-us/" target="_blank" rel="noopener" class="resource-link">More info ↗</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SUPPORT GROUPS -->
+  <section class="bg-white" aria-labelledby="groups-heading">
+    <div class="container">
+      <p class="section-label">Support groups</p>
+      <span class="section-rule" aria-hidden="true"></span>
+      <h2 id="groups-heading" style="margin-bottom:2.5rem;">Facilitated peer support</h2>
+
+      <div class="card-grid" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));">
+
+        <article class="card" style="background:var(--gray-light);">
+          <h3 class="card__title">Cōlleen's Pet Loss Support Group</h3>
+          <p class="card__body" style="margin-top:0.5rem;"><strong>Where:</strong> Humane Society of Huron Valley or remote<br><strong>Frequency:</strong> Monthly<br><strong>Facilitator:</strong> Cōlleen Doyle, LMSW</p>
+          <a href="https://www.hshv.org/get-help/endoflife/" target="_blank" rel="noopener" class="resource-link">More info ↗</a>
+        </article>
+
+        <article class="card" style="background:var(--gray-light);">
+          <h3 class="card__title">MSU Pet Loss Support Group</h3>
+          <p class="card__body" style="margin-top:0.5rem;"><strong>Where:</strong> Remote<br><strong>Frequency:</strong> Twice a month<br><strong>Offered by:</strong> Michigan State University College of Veterinary Medicine</p>
+          <a href="https://cvm.msu.edu/hospital/services/social-work/pet-loss-support-group" target="_blank" rel="noopener" class="resource-link">More info ↗</a>
+        </article>
+
+        <article class="card" style="background:var(--gray-light);">
+          <h3 class="card__title">Association for Pet Loss &amp; Bereavement Groups</h3>
+          <p class="card__body" style="margin-top:0.5rem;"><strong>Where:</strong> Remote and in-person locations nationwide<br><strong>Frequency:</strong> Varies by group<br><strong>Offered by:</strong> APLB volunteer network</p>
+          <a href="https://www.aplb.org/support/support-groups/" target="_blank" rel="noopener" class="resource-link">More info ↗</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- THERAPIST DIRECTORIES -->
+  <section class="bg-mint" aria-labelledby="directories-heading">
+    <div class="container">
+      <p class="section-label">Find a therapist</p>
+      <span class="section-rule" aria-hidden="true"></span>
+      <h2 id="directories-heading" style="margin-bottom:0.75rem;">Therapist directories</h2>
+      <p style="max-width:640px; margin-bottom:2.5rem;">Many therapists listed in these directories specialize in grief, pet loss, or the human-animal bond. Use the search filters on each site to find providers with relevant experience.</p>
+
+      <div class="card-grid" style="grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));">
+
+        <article class="card bg-white" style="display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <h3 class="card__title">Psychology Today</h3>
+            <p class="card__body" style="margin-top:0.5rem;">Large national directory. Filter by specialty, insurance, and location. Search "pet loss" or "grief" in the issues field.</p>
+          </div>
+          <a href="https://www.psychologytoday.com/us/therapists" target="_blank" rel="noopener" class="resource-link" style="margin-top:1rem;">Visit directory ↗</a>
+        </article>
+
+        <article class="card bg-white" style="display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <h3 class="card__title">Therapy Den</h3>
+            <p class="card__body" style="margin-top:0.5rem;">Directory with a focus on inclusive, identity-affirming care. Filter by specialty and sliding scale availability.</p>
+          </div>
+          <a href="https://www.therapyden.com" target="_blank" rel="noopener" class="resource-link" style="margin-top:1rem;">Visit directory ↗</a>
+        </article>
+
+        <article class="card bg-white" style="display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <h3 class="card__title">Good Therapy</h3>
+            <p class="card__body" style="margin-top:0.5rem;">Therapist directory with detailed profiles and information on therapeutic approaches and areas of focus.</p>
+          </div>
+          <a href="https://www.goodtherapy.org" target="_blank" rel="noopener" class="resource-link" style="margin-top:1rem;">Visit directory ↗</a>
+        </article>
+
+        <article class="card bg-white" style="display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <h3 class="card__title">Open Path Collective</h3>
+            <p class="card__body" style="margin-top:0.5rem;">Reduced-fee therapy directory for individuals and families with limited income. Sessions available at $30–$80.</p>
+          </div>
+          <a href="https://openpathcollective.org" target="_blank" rel="noopener" class="resource-link" style="margin-top:1rem;">Visit directory ↗</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOR VETERINARY PROFESSIONALS -->
+  <section class="bg-white" aria-labelledby="pro-resources-heading">
+    <div class="container">
+      <p class="section-label">Veterinary professionals</p>
+      <span class="section-rule" aria-hidden="true"></span>
+      <h2 id="pro-resources-heading" style="margin-bottom:2.5rem;">Organizations and support for animal care workers</h2>
+
+      <div class="card-grid" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));">
+
+        <article class="card" style="background:var(--gray-light);">
+          <h3 class="card__title">Not One More Vet (NOMV)</h3>
+          <p class="card__body" style="margin-top:0.5rem;">A nonprofit providing mental health resources and peer support specifically for veterinary professionals. Offers financial grants, a peer support network, and educational content on secondary trauma and moral stress.</p>
+          <a href="https://www.nomv.org" target="_blank" rel="noopener" class="resource-link">Visit NOMV ↗</a>
+        </article>
+
+        <article class="card" style="background:var(--gray-light);">
+          <h3 class="card__title">AVMA Wellbeing Resources</h3>
+          <p class="card__body" style="margin-top:0.5rem;">The American Veterinary Medical Association maintains a set of wellbeing resources for veterinarians and veterinary students, including information on stress, mental health, and practice sustainability.</p>
+          <a href="https://www.avma.org/resources-tools/wellbeing" target="_blank" rel="noopener" class="resource-link">Visit AVMA ↗</a>
+        </article>
+
+        <article class="card" style="background:var(--gray-light);">
+          <h3 class="card__title">VIN Foundation</h3>
+          <p class="card__body" style="margin-top:0.5rem;">Provides support for veterinary professionals including financial assistance, mental health resources, and access to the Veterinary Information Network community.</p>
+          <a href="https://vinfoundation.org" target="_blank" rel="noopener" class="resource-link">Visit VIN Foundation ↗</a>
+        </article>
+
+        <article class="card" style="background:var(--gray-light);">
+          <h3 class="card__title">Humane Society of the United States — Shelter Resources</h3>
+          <p class="card__body" style="margin-top:0.5rem;">Resources for shelter and rescue staff covering euthanasia support, compassion fatigue, and workforce sustainability in animal sheltering.</p>
+          <a href="https://www.humanesociety.org/resources/compassion-fatigue" target="_blank" rel="noopener" class="resource-link">Visit HSUS ↗</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONSULT CTA -->
+  <section class="bg-slate" aria-labelledby="resources-cta">
+    <div class="container" style="max-width:760px;">
+      <p class="section-label" style="color:rgba(234,246,244,0.6);">Need specific guidance?</p>
+      <span class="section-rule" aria-hidden="true" style="background:rgba(234,246,244,0.2);"></span>
+      <h2 id="resources-cta" style="color:var(--mint);">Consulting provides targeted guidance beyond published resources</h2>
+      <p class="mt-sm" style="color:rgba(234,246,244,0.8);">If your organization is dealing with specific challenges around staff moral stress, secondary trauma, or grief-related retention issues, a consulting conversation will give you more targeted information than published resources. We welcome organizational inquiries.</p>
+      <div class="mt-md" style="display:flex; gap:1rem; flex-wrap:wrap;">
+        <a href="contact.html" class="btn btn--mint">Contact us for organizational work</a>
+        <a href="services.html#individual" class="btn btn--outline-mint">Schedule an individual consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .filter-btn {
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      padding: 0.45rem 1rem;
+      border: 1px solid var(--line);
+      border-radius: 1px;
+      background: var(--white);
+      color: var(--gray-mid);
+      cursor: pointer;
+      transition: background 0.18s, color 0.18s, border-color 0.18s;
+    }
+    .filter-btn:hover { border-color: var(--slate); color: var(--slate); }
+    .filter-btn--active { background: var(--slate); color: var(--white); border-color: var(--slate); }
+
+    .tag {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.25rem 0.6rem;
+      border-radius: 1px;
+    }
+    .tag--primary { background: var(--mint); color: var(--slate); }
+    .tag--secondary { background: var(--gray-light); color: var(--gray-mid); }
+
+    .resource-link {
+      display: inline-block;
+      margin-top: 1rem;
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      color: var(--slate);
+      text-decoration: none;
+      border-bottom: 1px solid var(--slate);
+      padding-bottom: 1px;
+      transition: opacity 0.15s;
+    }
+    .resource-link:hover { opacity: 0.65; }
+
+    .btn--mint {
+      background: var(--mint);
+      color: var(--slate);
+      border: 2px solid var(--mint);
+      padding: 0.9rem 2rem;
+      border-radius: 60px;
+      font-family: var(--font-body);
+      font-size: 0.88rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+      transition: opacity 0.18s;
+    }
+    .btn--mint:hover { opacity: 0.85; }
+
+    .btn--outline-mint {
+      background: transparent;
+      color: var(--mint);
+      border: 2px solid rgba(234,246,244,0.4);
+      padding: 0.9rem 2rem;
+      border-radius: 60px;
+      font-family: var(--font-body);
+      font-size: 0.88rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+      transition: border-color 0.18s, color 0.18s;
+    }
+    .btn--outline-mint:hover { border-color: var(--mint); color: var(--mint); }
+  </style>
+
+  <script src="components.js"></script>
+  <script>
+    function filterResources(category) {
+      const cards = document.querySelectorAll('.resource-card');
+      const btns  = document.querySelectorAll('.filter-btn');
+      const noResults = document.getElementById('no-results');
+      let visible = 0;
+      btns.forEach(b => b.classList.toggle('filter-btn--active', b.dataset.filter === category));
+      cards.forEach(card => {
+        const cats = card.dataset.category || '';
+        const show = category === 'all' || cats.includes(category);
+        card.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+      noResults.style.display = visible === 0 ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>
