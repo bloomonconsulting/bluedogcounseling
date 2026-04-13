@@ -481,7 +481,7 @@ section { padding-block: var(--section-y); }
   display: grid;
   grid-template-columns: 1fr clamp(180px, 24%, 280px);
   gap: clamp(1.5rem, 4vw, 4rem);
-  align-items: start;
+  align-items: center;
 }
 
 .editorial-photo img {
@@ -876,10 +876,11 @@ section { padding-block: var(--section-y); }
 
 /* ─── LOGO IN NAV ────────────────────────────────────────────────────── */
 .nav__logo-img {
-  height: 36px;
+  height: 32px;
   width: auto;
   display: block;
   flex-shrink: 0;
+  margin-top: -1px;
 }
 
 .nav__logo-wordmark {
