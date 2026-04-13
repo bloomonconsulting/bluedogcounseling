@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Services | Blue Dog Counseling</title>
-  <meta name="description" content="Blue Dog Counseling offers organizational consulting, training, individual consultation, and clinical supervision for veterinary and animal welfare professionals." />
-  <meta name="keywords" content="veterinary consulting services, animal welfare training, vet staff workshop, euthanasia support training, secondary trauma training, animal shelter consulting, grief-informed care training" />
+  <title>Services | Blue Dog Counseling | Consulting, Training & Clinical Services</title>
+  <meta name="description" content="Organizational consulting, staff training, individual consultation, and clinical supervision for veterinary practices, animal shelters, and animal welfare professionals. Grief-informed. Evidence-based." />
+  <meta name="keywords" content="veterinary consulting services, animal welfare training, vet staff training, euthanasia support training, secondary trauma training, animal shelter consulting, grief-informed care training" />
   <link rel="canonical" href="https://www.bluedogcounseling.com/services" />
 
   <link rel="stylesheet" href="styles.css" />
@@ -82,29 +82,43 @@
         <span class="section-rule" aria-hidden="true"></span>
         <h2 id="training-heading">Training</h2>
         <p class="mt-sm">Training is available for veterinary practices, animal shelters, animal control agencies, veterinary conferences, and animal welfare associations. Each session is adapted to the roles, clinical environment, and specific exposures of your team.</p>
-        <p>Sessions are available in-person or virtually, as a standalone event or as part of a broader consulting engagement. All training is built on clinical expertise in grief, trauma, and the human-animal bond — not generic wellness content.</p>
+        <p>Sessions are available in-person or virtually, as a standalone event or as part of a broader consulting engagement. All training is built on clinical expertise in grief, trauma, and the human-animal bond. Not generic wellness content.</p>
       </div>
-      <div class="card-grid mt-lg">
-        <article class="card bg-white">
-          <h3 class="card__title">Grief-informed client communication</h3>
-          <p class="card__body" style="margin-top:0.5rem;">A structured approach to conversations around animal death, terminal diagnosis, and euthanasia. Participants leave with specific communication tools applicable to their role.</p>
-          <p style="font-size:0.78rem; color:var(--gray-mid); margin-top:0.75rem; font-weight:500; letter-spacing:0.04em; text-transform:uppercase;">Audience: Veterinarians, vet techs, client service staff, and others in client-facing animal care roles</p>
+      <div class="card-grid mt-lg" style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));">
+
+        <article class="card bg-white training-card">
+          <p class="training-card__topic">Client communication</p>
+          <h3 class="training-card__title">Grief-informed client communication</h3>
+          <ul class="training-card__points">
+            <li>Conversations around terminal diagnosis and end-of-life</li>
+            <li>Navigating euthanasia discussions with clients</li>
+            <li>Communication tools specific to each staff role</li>
+          </ul>
+          <div class="training-card__audience">Vets · Vet techs · Client service staff</div>
         </article>
-        <article class="card bg-white">
-          <h3 class="card__title">Secondary trauma in animal care</h3>
-          <p class="card__body" style="margin-top:0.5rem;">An evidence-based session on recognizing, naming, and responding to secondary traumatic stress in veterinary and shelter environments. Addresses both individual and organizational responses.</p>
-          <p style="font-size:0.78rem; color:var(--gray-mid); margin-top:0.75rem; font-weight:500; letter-spacing:0.04em; text-transform:uppercase;">Audience: All animal care roles</p>
+
+        <article class="card bg-white training-card">
+          <p class="training-card__topic">Staff wellbeing</p>
+          <h3 class="training-card__title">Secondary trauma in animal care</h3>
+          <ul class="training-card__points">
+            <li>Recognizing and naming secondary traumatic stress</li>
+            <li>Individual responses and organizational responsibilities</li>
+            <li>Evidence-based frameworks for animal care settings</li>
+          </ul>
+          <div class="training-card__audience">All animal care roles</div>
         </article>
-        <article class="card bg-white">
-          <h3 class="card__title">Euthanasia decision support</h3>
-          <p class="card__body" style="margin-top:0.5rem;">Covers the clinical and psychological dimensions of euthanasia decisions — for clients and for the practitioners involved. Addresses moral stress and decision fatigue directly.</p>
-          <p style="font-size:0.78rem; color:var(--gray-mid); margin-top:0.75rem; font-weight:500; letter-spacing:0.04em; text-transform:uppercase;">Audience: Veterinarians, vet techs, shelter leadership, and others making or supporting euthanasia decisions</p>
+
+        <article class="card bg-white training-card">
+          <p class="training-card__topic">Euthanasia</p>
+          <h3 class="training-card__title">Euthanasia decision support</h3>
+          <ul class="training-card__points">
+            <li>Clinical and psychological dimensions of euthanasia decisions</li>
+            <li>Moral stress and decision fatigue in high-volume settings</li>
+            <li>Supporting both clients and practitioners through the process</li>
+          </ul>
+          <div class="training-card__audience">Vets · Shelter staff · Euthanasia decision-makers</div>
         </article>
-        <article class="card bg-white">
-          <h3 class="card__title">Building sustainable teams</h3>
-          <p class="card__body" style="margin-top:0.5rem;">Covers the relationship between staff moral stress, secondary trauma, and retention, and outlines concrete organizational responses. Designed for those responsible for team structure and culture.</p>
-          <p style="font-size:0.78rem; color:var(--gray-mid); margin-top:0.75rem; font-weight:500; letter-spacing:0.04em; text-transform:uppercase;">Audience: Practice owners, clinic managers, shelter directors</p>
-        </article>
+
       </div>
       <div class="mt-lg">
         <a href="contact.html" class="btn btn--primary">Inquire about training</a>
@@ -172,6 +186,69 @@
       <a href="contact.html" class="btn btn--outline-white">Contact us</a>
     </div>
   </section>
+
+  <style>
+    .training-card {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      padding: 2rem;
+    }
+    .training-card__topic {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--slate);
+      opacity: 0.5;
+      margin-bottom: 0.6rem;
+    }
+    .training-card__title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--slate);
+      line-height: 1.3;
+      margin-bottom: 1.25rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--line);
+    }
+    .training-card__points {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      flex: 1;
+      margin-bottom: 1.5rem;
+    }
+    .training-card__points li {
+      font-size: 0.9rem;
+      color: #2a2a2a;
+      padding-left: 1rem;
+      position: relative;
+      line-height: 1.45;
+    }
+    .training-card__points li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 4px;
+      height: 4px;
+      background: var(--slate);
+      border-radius: 50%;
+      opacity: 0.4;
+    }
+    .training-card__audience {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      color: var(--slate);
+      background: var(--mint);
+      padding: 0.4rem 0.75rem;
+      border-radius: 2px;
+      align-self: flex-start;
+    }
+  </style>
 
   <script src="components.js"></script>
 </body>

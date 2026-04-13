@@ -29,8 +29,8 @@
 <nav class="nav" role="navigation" aria-label="Main navigation">
   <div class="container nav__inner">
     <a href="index.html" class="nav__logo" aria-label="Blue Dog Counseling home">
-      <img src="logo.png" alt="Blue Dog Counseling" class="nav__logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';" />
-      <span class="nav__logo-text" style="display:none;">Blue Dog Counseling</span>
+      <img src="logo.png" alt="" class="nav__logo-img" aria-hidden="true" />
+      <span class="nav__logo-text">Blue Dog Counseling</span>
     </a>
     <ul class="nav__links" id="bdc-nav-links" role="list">
       <li><a href="index.html"${activeIf('index.html')}>Home</a></li>
@@ -60,8 +60,7 @@
         <p class="footer__col-head">Services</p>
         <ul class="footer__links">
           <li><a href="services.html#consulting">Organizational consulting</a></li>
-          <li><a href="services.html#training">Staff training</a></li>
-          <li><a href="services.html#workshops">Workshops</a></li>
+          <li><a href="services.html#training">Training</a></li>
           <li><a href="services.html#individual">Individual consultation</a></li>
           <li><a href="services.html#supervision">Supervision</a></li>
         </ul>
