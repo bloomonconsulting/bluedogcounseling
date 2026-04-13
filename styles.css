@@ -24,7 +24,8 @@
 :root {
   --black:       #000000;
   --white:       #FFFFFF;
-  --mint:        #D0E8E6;
+  --mint:        #EAF6F4;
+  --mint-deep:   #D9F4EF;
   --slate:       #2C3E50;
   --slate-dark:  #1e2d3d;
   --gray-mid:    #6b7280;
@@ -785,3 +786,14 @@ section { padding-block: var(--section-y); }
 
 /* Taller nav to accommodate larger logo */
 .nav__inner { height: 88px; }
+
+/* ─── STAT SOURCE ATTRIBUTION ────────────────────────────────────────── */
+.stat__source {
+  font-size: 0.68rem;
+  color: rgba(255,255,255,0.40);
+  letter-spacing: 0.03em;
+  margin-top: 0.4rem;
+  max-width: 22ch;
+  margin-inline: auto;
+  font-style: italic;
+}
