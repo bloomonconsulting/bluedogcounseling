@@ -54,7 +54,7 @@
       <div>
         <p class="footer__brand">Blue Dog Counseling</p>
         <p class="footer__tagline">Creating supportive environments so you can provide the best care to animals and their people.</p>
-        <p style="font-size:0.72rem; color:rgba(208,232,230,0.5); margin-top:0.5rem; letter-spacing:0.06em;">Grief-Informed. Evidence-Based. Sustainable.</p>
+        <p style="font-size:0.72rem; color:rgba(208,232,230,0.5); margin-top:0.5rem; letter-spacing:0.06em;">Grief-Informed. Evidence-Based.</p>
       </div>
       <div>
         <p class="footer__col-head">Services</p>
