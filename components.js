@@ -31,7 +31,7 @@
     <a href="index.html" class="nav__logo" aria-label="Blue Dog Counseling home">
       <img src="dog-icon-mint.png" alt="" class="nav__logo-img" aria-hidden="true" />
       <span class="nav__logo-wordmark">
-        <span class="nav__logo-name">Blue Dog</span>
+        <span class="nav__logo-name"><span class="nav__logo-blue">BLUE</span><span class="nav__logo-dog">dog</span></span>
         <span class="nav__logo-tagline">pet loss &amp; grief, we get it</span>
       </span>
     </a>
