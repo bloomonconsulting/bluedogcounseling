@@ -6,19 +6,37 @@
 */
 
 /* ─── FONT FACE ────────────────────────────────────────────────────
-   Replace the src paths below with your licensed Avenir Arabic Next
-   Light font files once available.
+   Avenir Next: Ultra Light (100), Thin (200), Light (300)
 ──────────────────────────────────────────────────────────────────── */
-/*
 @font-face {
-  font-family: 'Avenir Arabic Next';
-  src: url('fonts/AvenirArabicNext-Light.woff2') format('woff2'),
-       url('fonts/AvenirArabicNext-Light.woff') format('woff');
+  font-family: 'Avenir Next';
+  src: url('fonts/avenir-next-ultra-light.woff2') format('woff2'),
+       url('fonts/avenir-next-ultra-light.woff') format('woff'),
+       url('fonts/avenir-next-ultra-light.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('fonts/avenir-next-thin.woff2') format('woff2'),
+       url('fonts/avenir-next-thin.woff') format('woff'),
+       url('fonts/avenir-next-thin.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('fonts/avenir-next-light.woff2') format('woff2'),
+       url('fonts/avenir-next-light.woff') format('woff'),
+       url('fonts/avenir-next-light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
-*/
 
 /* ─── CUSTOM PROPERTIES ─────────────────────────────────────────── */
 :root {
