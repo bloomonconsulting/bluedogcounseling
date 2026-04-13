@@ -439,37 +439,41 @@ section { padding-block: var(--section-y); }
 .bg-light  { background: var(--gray-light); }
 
 /* ─── SPLIT PANEL (full-bleed image column) ──────────────────────── */
-/*
-  Section-level grid: text column with container-aligned padding,
-  image column that bleeds edge-to-edge with no constraint.
-*/
 .split-panel {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 500px;
-  overflow: hidden;
+  min-height: 520px;
 }
 
-/* When page-hero uses split-panel, let the content handle padding */
 .page-hero.split-panel {
   padding-block: 0;
 }
 
 .split-panel__content {
   padding-block: var(--section-y);
-  padding-right: clamp(2.5rem, 5vw, 5rem);
-  /* Align left edge with the container at wide viewports */
-  padding-left: max(var(--pad-x), calc((100vw - var(--max-w)) / 2 + var(--pad-x)));
+  padding-left: var(--pad-x);
+  padding-right: clamp(2rem, 4vw, 4rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+/* At wide viewports, indent text to align with the container left edge */
+@media (min-width: 1120px) {
+  .split-panel__content {
+    padding-left: calc((100vw - var(--max-w)) / 2 + var(--pad-x));
+  }
+}
+
 .split-panel__image {
+  position: relative;
   overflow: hidden;
 }
 
+/* Absolutely fill the image column so height always resolves */
 .split-panel__image img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -482,14 +486,16 @@ section { padding-block: var(--section-y); }
     grid-template-columns: 1fr;
   }
   .split-panel__image {
-    height: 340px;
+    height: 360px;
     order: -1;
   }
-  .split-panel__content {
-    padding-inline: var(--pad-x);
+  .split-panel__image img {
+    position: static;
+    height: 360px;
+    width: 100%;
   }
-  .page-hero.split-panel .split-panel__content {
-    padding-block: clamp(3rem, 7vw, 5rem);
+  .split-panel__content {
+    padding-left: var(--pad-x);
   }
 }
 
@@ -883,11 +889,12 @@ section { padding-block: var(--section-y); }
 }
 
 .nav__logo-text {
-  font-size: 0.95rem;
-  font-weight: 500;
-  letter-spacing: 0.04em;
+  font-size: 1.05rem;
+  font-weight: var(--weight-semi);
+  letter-spacing: 0.06em;
   color: var(--white);
   white-space: nowrap;
+  text-transform: uppercase;
 }
 
 /* Remove the placeholder circle now that we have the real logo */

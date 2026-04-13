@@ -29,8 +29,7 @@
 <nav class="nav" role="navigation" aria-label="Main navigation">
   <div class="container nav__inner">
     <a href="index.html" class="nav__logo" aria-label="Blue Dog Counseling home">
-      <img src="logo.png" alt="" class="nav__logo-img" aria-hidden="true" />
-      <span class="nav__logo-text">Blue Dog Counseling</span>
+      <span class="nav__logo-text">Blue Dog</span>
     </a>
     <ul class="nav__links" id="bdc-nav-links" role="list">
       <li><a href="index.html"${activeIf('index.html')}>Home</a></li>
