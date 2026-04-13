@@ -479,8 +479,8 @@ section { padding-block: var(--section-y); }
 /* ─── EDITORIAL PHOTO (inset to right of text, within container) ─── */
 .editorial-grid {
   display: grid;
-  grid-template-columns: 1fr 280px;
-  gap: clamp(2rem, 5vw, 4rem);
+  grid-template-columns: 1fr clamp(180px, 24%, 280px);
+  gap: clamp(1.5rem, 4vw, 4rem);
   align-items: start;
 }
 
@@ -491,7 +491,7 @@ section { padding-block: var(--section-y); }
   border-radius: var(--radius);
 }
 
-@media (max-width: 860px) {
+@media (max-width: 560px) {
   .editorial-grid { grid-template-columns: 1fr; }
   .editorial-photo { max-width: 280px; }
 }
