@@ -438,6 +438,61 @@ section { padding-block: var(--section-y); }
 .bg-slate  { background: var(--slate); color: var(--white); }
 .bg-light  { background: var(--gray-light); }
 
+/* ─── SPLIT PANEL (full-bleed image column) ──────────────────────── */
+/*
+  Section-level grid: text column with container-aligned padding,
+  image column that bleeds edge-to-edge with no constraint.
+*/
+.split-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+/* When page-hero uses split-panel, let the content handle padding */
+.page-hero.split-panel {
+  padding-block: 0;
+}
+
+.split-panel__content {
+  padding-block: var(--section-y);
+  padding-right: clamp(2.5rem, 5vw, 5rem);
+  /* Align left edge with the container at wide viewports */
+  padding-left: max(var(--pad-x), calc((100vw - var(--max-w)) / 2 + var(--pad-x)));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.split-panel__image {
+  overflow: hidden;
+}
+
+.split-panel__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .split-panel {
+    grid-template-columns: 1fr;
+  }
+  .split-panel__image {
+    height: 340px;
+    order: -1;
+  }
+  .split-panel__content {
+    padding-inline: var(--pad-x);
+  }
+  .page-hero.split-panel .split-panel__content {
+    padding-block: clamp(3rem, 7vw, 5rem);
+  }
+}
+
 /* ─── TWO-COL SPLIT ──────────────────────────────────────────────── */
 .split {
   display: grid;
@@ -701,19 +756,6 @@ section { padding-block: var(--section-y); }
 
 .w-full { width: 100%; }
 .max-prose { max-width: 68ch; }
-
-/* ─── IMAGE FADE MASKS ───────────────────────────────────────────── */
-/* Fade left edge — for images placed to the right of text */
-.img-fade-left {
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 38%);
-  mask-image: linear-gradient(to right, transparent 0%, black 38%);
-}
-
-/* Fade bottom edge — for images sitting above text content */
-.img-fade-bottom {
-  -webkit-mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
-  mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
-}
 
 /* ─── INLINE RULE DIVIDER ────────────────────────────────────────── */
 .hr-thin {
