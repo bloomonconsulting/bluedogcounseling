@@ -29,7 +29,7 @@
 <nav class="nav" role="navigation" aria-label="Main navigation">
   <div class="container nav__inner">
     <a href="index.html" class="nav__logo" aria-label="Blue Dog Counseling home">
-      <img src="dog-icon-mint.png" alt="" class="nav__logo-img" aria-hidden="true" />
+      <img src="dog-icon-slate.png" alt="" class="nav__logo-img" aria-hidden="true" />
       <span class="nav__logo-wordmark">
         <span class="nav__logo-name"><span class="nav__logo-blue">BLUE</span> <span class="nav__logo-dog">dog</span></span>
         <span class="nav__logo-tagline">pet loss &amp; grief, we get it</span>
@@ -55,7 +55,7 @@
   <div class="container">
     <div class="footer__grid">
       <div>
-        <p class="footer__brand">Blue Dog Counseling</p>
+        <p class="footer__brand">BLUE dog</p>
         <p class="footer__tagline">Creating supportive environments so you can provide the best care to animals and their people.</p>
         <p style="font-size:0.72rem; color:rgba(208,232,230,0.5); margin-top:0.5rem; letter-spacing:0.06em;">Grief-Informed. Evidence-Based.</p>
       </div>
@@ -88,7 +88,7 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <span>&copy; ${new Date().getFullYear()} Blue Dog Counseling. All rights reserved.</span>
+      <span>&copy; ${new Date().getFullYear()} BLUE dog. All rights reserved.</span>
       <div style="display:flex; gap:1.5rem;">
         <a href="privacy.html">Privacy policy</a>
         <a href="contact.html">Contact</a>
