@@ -773,19 +773,28 @@ section { padding-block: var(--section-y); }
 
 /* ─── LOGO IN NAV ────────────────────────────────────────────────────── */
 .nav__logo-img {
-  height: 72px;
-  width: 72px;
+  height: 44px;
+  width: 44px;
   display: block;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: top center;
   border-radius: 3px;
   flex-shrink: 0;
+}
+
+.nav__logo-text {
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  white-space: nowrap;
 }
 
 /* Remove the placeholder circle now that we have the real logo */
 .nav__logo-mark { display: none; }
 
-/* Taller nav to accommodate larger logo */
-.nav__inner { height: 88px; }
+/* Nav height */
+.nav__inner { height: 72px; }
 
 /* ─── STAT SOURCE ATTRIBUTION ────────────────────────────────────────── */
 .stat__source {
