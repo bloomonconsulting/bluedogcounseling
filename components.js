@@ -66,7 +66,7 @@
           <li><a href="services.html#consulting">Consulting</a></li>
           <li><a href="services.html#training">Training</a></li>
           <li><a href="services.html#individual">Individual consultation</a></li>
-          <li><a href="services.html#supervision">Supervision</a></li>
+          <li><a href="services.html#case-consultation">Case consultation</a></li>
         </ul>
       </div>
       <div>
@@ -84,7 +84,7 @@
         <p class="footer__col-head">Contact</p>
         <ul class="footer__links">
           <li><a href="contact.html">Request a consultation</a></li>
-          <li><a href="contact.html">Organizational inquiries</a></li>
+          <li><a href="contact.html">Consulting inquiries</a></li>
           <li><a href="tel:+17342155591">(734) 215-5591</a></li>
         </ul>
       </div>

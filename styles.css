@@ -476,6 +476,48 @@ section { padding-block: var(--section-y); }
   z-index: 1;
 }
 
+/* ─── COLLAGE HERO (grid of photos behind overlay + text) ──────────── */
+.page-hero--collage {
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero__collage-bg {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.page-hero__collage-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.page-hero--collage::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(44,62,80,0.80);
+  z-index: 1;
+}
+
+.page-hero--collage .container {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 600px) {
+  .page-hero__collage-bg {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .page-hero__collage-bg img:nth-child(n+4) {
+    display: none;
+  }
+}
+
 /* ─── EDITORIAL PHOTO (inset to right of text, within container) ─── */
 .editorial-grid {
   display: grid;
