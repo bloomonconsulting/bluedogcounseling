@@ -40,6 +40,7 @@
       <li><a href="about.html"${activeIf('about.html')}>About</a></li>
       <li><a href="services.html"${activeIf('services.html')}>Services</a></li>
       <li><a href="for-providers.html"${activeIf('for-providers.html')}>For Providers</a></li>
+      <li><a href="for-individuals.html"${activeIf('for-individuals.html')}>For Individuals</a></li>
       <li><a href="resources.html"${activeIf('resources.html')}>Resources</a></li>
       <li><a href="contact.html" class="nav__cta${location.pathname.endsWith('contact.html') ? ' active' : ''}">Contact</a></li>
     </ul>
@@ -56,13 +57,13 @@
     <div class="footer__grid">
       <div>
         <p class="footer__brand">BLUE dog</p>
-        <p class="footer__tagline">Creating supportive environments so you can provide the best care to animals and their people.</p>
+        <p class="footer__tagline">Specialized support for the people who work with animals, and the people who love them.</p>
         <p style="font-size:0.72rem; color:rgba(208,232,230,0.5); margin-top:0.5rem; letter-spacing:0.06em;">Grief-Informed. Evidence-Based.</p>
       </div>
       <div>
         <p class="footer__col-head">Services</p>
         <ul class="footer__links">
-          <li><a href="services.html#consulting">Organizational consulting</a></li>
+          <li><a href="services.html#consulting">Consulting</a></li>
           <li><a href="services.html#training">Training</a></li>
           <li><a href="services.html#individual">Individual consultation</a></li>
           <li><a href="services.html#supervision">Supervision</a></li>
@@ -74,6 +75,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="for-providers.html">For providers</a></li>
+          <li><a href="for-individuals.html">For individuals</a></li>
           <li><a href="resources.html">Resources</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
