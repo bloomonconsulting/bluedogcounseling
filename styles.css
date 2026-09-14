@@ -60,7 +60,7 @@
 
   --max-w:      1320px;
   --pad-x:      clamp(1rem, 2.5vw, 2.5rem);
-  --section-y:  clamp(5rem, 10vw, 8rem);
+  --section-y:  clamp(3rem, 6vw, 4.5rem);
 
   --radius:     10px;
   --transition: 0.18s ease;
@@ -120,13 +120,6 @@ section { padding-block: var(--section-y); }
   margin-bottom: 1rem;
 }
 
-.section-rule {
-  display: block;
-  width: 2rem;
-  height: 1px;
-  background: var(--black);
-  margin-bottom: 1.5rem;
-}
 
 /* ─── NAVIGATION ─────────────────────────────────────────────────── */
 .nav {
