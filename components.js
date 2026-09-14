@@ -32,7 +32,7 @@
       <img src="dog-icon-slate.png" alt="" class="nav__logo-img" aria-hidden="true" />
       <span class="nav__logo-wordmark">
         <span class="nav__logo-name"><span class="nav__logo-blue">BLUE</span> <span class="nav__logo-dog">dog</span></span>
-        <span class="nav__logo-tagline">pet loss &amp; grief, we get it</span>
+        <span class="nav__logo-tagline">for animal people</span>
       </span>
     </a>
     <ul class="nav__links" id="bdc-nav-links" role="list">
@@ -58,14 +58,14 @@
       <div>
         <p class="footer__brand">BLUE dog</p>
         <p class="footer__tagline">Specialized support for the people who work with animals, and the people who love them.</p>
-        <p style="font-size:0.72rem; color:rgba(208,232,230,0.5); margin-top:0.5rem; letter-spacing:0.06em;">Grief-Informed. Evidence-Based.</p>
+        <p style="font-size:0.72rem; color:rgba(208,232,230,0.5); margin-top:0.5rem; letter-spacing:0.06em;">Support for Animal People</p>
       </div>
       <div>
         <p class="footer__col-head">Services</p>
         <ul class="footer__links">
           <li><a href="services.html#consulting">Consulting</a></li>
           <li><a href="services.html#training">Training</a></li>
-          <li><a href="services.html#individual">Individual consultation</a></li>
+          <li><a href="services.html#individual">Individual support services</a></li>
           <li><a href="services.html#case-consultation">Case consultation</a></li>
         </ul>
       </div>
@@ -83,8 +83,7 @@
       <div>
         <p class="footer__col-head">Contact</p>
         <ul class="footer__links">
-          <li><a href="contact.html">Request a consultation</a></li>
-          <li><a href="contact.html">Consulting inquiries</a></li>
+          <li><a href="contact.html">Get in touch</a></li>
           <li><a href="tel:+17342155591">(734) 215-5591</a></li>
         </ul>
       </div>

@@ -691,14 +691,14 @@ section { padding-block: var(--section-y); }
 .footer {
   background: var(--slate);
   color: rgba(255,255,255,0.70);
-  padding-block: 3rem 2rem;
+  padding-block: 2rem 1.25rem;
 }
 
 .footer__grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 3rem;
-  margin-bottom: 3rem;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .footer__brand {
@@ -961,9 +961,9 @@ section { padding-block: var(--section-y); }
 
 .nav__logo-tagline {
   font-size: 0.62rem;
-  font-weight: var(--weight-light);
+  font-weight: var(--weight-regular);
   letter-spacing: 0.04em;
-  color: rgba(44,62,80,0.50);
+  color: rgba(44,62,80,0.65);
   line-height: 1;
 }
 
