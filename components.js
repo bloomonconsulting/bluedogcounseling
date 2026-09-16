@@ -84,7 +84,7 @@
         <p class="footer__col-head">Contact</p>
         <ul class="footer__links">
           <li><a href="contact.html">Get in touch</a></li>
-          <li><a href="tel:+17342155591">(734) 215-5591</a></li>
+          <li><a href="tel:+17342155223">(734) 215-5223</a></li>
         </ul>
       </div>
     </div>
