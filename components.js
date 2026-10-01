@@ -29,11 +29,7 @@
 <nav class="nav" role="navigation" aria-label="Main navigation">
   <div class="container nav__inner">
     <a href="index.html" class="nav__logo" aria-label="BLUE dog Counseling home">
-      <img src="dog-icon-slate.png" alt="" class="nav__logo-img" aria-hidden="true" />
-      <span class="nav__logo-wordmark">
-        <span class="nav__logo-name"><span class="nav__logo-blue">BLUE</span> <span class="nav__logo-dog">dog</span></span>
-        <span class="nav__logo-tagline">for animal people</span>
-      </span>
+      <img src="bluedog-logo-horizontal.png" alt="BLUE dog Counseling, for animal people" class="nav__logo-full" width="710" height="192" />
     </a>
     <ul class="nav__links" id="bdc-nav-links" role="list">
       <li><a href="index.html"${activeIf('index.html')}>Home</a></li>
