@@ -280,7 +280,7 @@ section { padding-block: var(--section-y); }
 }
 
 
-.hero__title { margin-bottom: 1.5rem; }
+.hero__title { margin-bottom: 1.5rem; color: var(--slate); }
 
 .hero__title em {
   font-style: normal;

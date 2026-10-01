@@ -1,5 +1,5 @@
 /**
- * Blue Dog Counseling: Shared Components
+ * BLUE dog Counseling: Shared Components
  * -----------------------------------------
  * Injects: nav, footer, mobile-nav toggle, scroll animations.
  * To update the nav or footer sitewide, edit ONLY this file.
@@ -28,7 +28,7 @@
   const NAV_HTML = `
 <nav class="nav" role="navigation" aria-label="Main navigation">
   <div class="container nav__inner">
-    <a href="index.html" class="nav__logo" aria-label="Blue Dog Counseling home">
+    <a href="index.html" class="nav__logo" aria-label="BLUE dog Counseling home">
       <img src="dog-icon-slate.png" alt="" class="nav__logo-img" aria-hidden="true" />
       <span class="nav__logo-wordmark">
         <span class="nav__logo-name"><span class="nav__logo-blue">BLUE</span> <span class="nav__logo-dog">dog</span></span>
@@ -40,6 +40,7 @@
       <li><a href="about.html"${activeIf('about.html')}>About</a></li>
       <li><a href="services.html"${activeIf('services.html')}>Services</a></li>
       <li><a href="for-providers.html"${activeIf('for-providers.html')}>For Providers</a></li>
+      <li><a href="workplace-wellbeing.html"${activeIf('workplace-wellbeing.html')}>For Workplaces</a></li>
       <li><a href="for-individuals.html"${activeIf('for-individuals.html')}>For Individuals</a></li>
       <li><a href="resources.html"${activeIf('resources.html')}>Resources</a></li>
       <li><a href="contact.html" class="nav__cta${location.pathname.endsWith('contact.html') ? ' active' : ''}">Contact</a></li>
@@ -64,6 +65,7 @@
         <p class="footer__col-head">Services</p>
         <ul class="footer__links">
           <li><a href="services.html#consulting">Consulting</a></li>
+          <li><a href="workplace-wellbeing.html">Workplace wellbeing</a></li>
           <li><a href="services.html#training">Training</a></li>
           <li><a href="services.html#individual">Individual support services</a></li>
           <li><a href="services.html#case-consultation">Case consultation</a></li>
@@ -75,6 +77,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="for-providers.html">For providers</a></li>
+          <li><a href="workplace-wellbeing.html">For workplaces</a></li>
           <li><a href="for-individuals.html">For individuals</a></li>
           <li><a href="resources.html">Resources</a></li>
           <li><a href="contact.html">Contact</a></li>
