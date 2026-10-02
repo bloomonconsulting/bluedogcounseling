@@ -20,26 +20,29 @@
    * current page filename.
    */
   function activeIf(href) {
-    const page = location.pathname.split('/').pop() || 'index.html';
-    return page === href ? ' class="active"' : '';
+    const norm = p => {
+      const last = p.split('/').filter(Boolean).pop() || 'index';
+      return last.replace(/\.html$/, '');
+    };
+    return norm(location.pathname) === norm(href) ? ' class="active"' : '';
   }
 
   /* ─── NAV TEMPLATE ───────────────────────────────────────────────── */
   const NAV_HTML = `
 <nav class="nav" role="navigation" aria-label="Main navigation">
   <div class="container nav__inner">
-    <a href="index.html" class="nav__logo" aria-label="BLUE dog Counseling home">
+    <a href="/" class="nav__logo" aria-label="BLUE dog Counseling home">
       <img src="bluedog-logo-horizontal.png" alt="BLUE dog Counseling, for animal people" class="nav__logo-full" width="710" height="192" />
     </a>
     <ul class="nav__links" id="bdc-nav-links" role="list">
-      <li><a href="index.html"${activeIf('index.html')}>Home</a></li>
-      <li><a href="about.html"${activeIf('about.html')}>About</a></li>
-      <li><a href="services.html"${activeIf('services.html')}>Services</a></li>
-      <li><a href="for-providers.html"${activeIf('for-providers.html')}>For Providers</a></li>
-      <li><a href="workplace-wellbeing.html"${activeIf('workplace-wellbeing.html')}>For Workplaces</a></li>
-      <li><a href="for-individuals.html"${activeIf('for-individuals.html')}>For Individuals</a></li>
-      <li><a href="resources.html"${activeIf('resources.html')}>Resources</a></li>
-      <li><a href="contact.html" class="nav__cta${location.pathname.endsWith('contact.html') ? ' active' : ''}">Contact</a></li>
+      <li><a href="/"${activeIf('index.html')}>Home</a></li>
+      <li><a href="/about"${activeIf('about.html')}>About</a></li>
+      <li><a href="/services"${activeIf('services.html')}>Services</a></li>
+      <li><a href="/for-providers"${activeIf('for-providers.html')}>For Providers</a></li>
+      <li><a href="/workplace-wellbeing"${activeIf('workplace-wellbeing.html')}>For Workplaces</a></li>
+      <li><a href="/for-individuals"${activeIf('for-individuals.html')}>For Individuals</a></li>
+      <li><a href="/resources"${activeIf('resources.html')}>Resources</a></li>
+      <li><a href="/contact" class="nav__cta${/\/contact(\.html)?\/?$/.test(location.pathname) ? ' active' : ''}">Contact</a></li>
     </ul>
     <button class="nav__toggle" id="bdc-nav-toggle" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -60,29 +63,29 @@
       <div>
         <p class="footer__col-head">Services</p>
         <ul class="footer__links">
-          <li><a href="services.html#consulting">Consulting</a></li>
-          <li><a href="workplace-wellbeing.html">Workplace wellbeing</a></li>
-          <li><a href="services.html#training">Training</a></li>
-          <li><a href="services.html#individual">Individual support services</a></li>
-          <li><a href="services.html#case-consultation">Case consultation</a></li>
+          <li><a href="/services#consulting">Consulting</a></li>
+          <li><a href="/workplace-wellbeing">Workplace wellbeing</a></li>
+          <li><a href="/services#training">Training</a></li>
+          <li><a href="/services#individual">Individual support services</a></li>
+          <li><a href="/services#case-consultation">Case consultation</a></li>
         </ul>
       </div>
       <div>
         <p class="footer__col-head">Navigate</p>
         <ul class="footer__links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="for-providers.html">For providers</a></li>
-          <li><a href="workplace-wellbeing.html">For workplaces</a></li>
-          <li><a href="for-individuals.html">For individuals</a></li>
-          <li><a href="resources.html">Resources</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/for-providers">For providers</a></li>
+          <li><a href="/workplace-wellbeing">For workplaces</a></li>
+          <li><a href="/for-individuals">For individuals</a></li>
+          <li><a href="/resources">Resources</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
       </div>
       <div>
         <p class="footer__col-head">Contact</p>
         <ul class="footer__links">
-          <li><a href="contact.html">Get in touch</a></li>
+          <li><a href="/contact">Get in touch</a></li>
           <li><a href="tel:+17342155223">(734) 215-5223</a></li>
         </ul>
       </div>
@@ -90,8 +93,8 @@
     <div class="footer__bottom">
       <span>&copy; ${new Date().getFullYear()} BLUE dog. All rights reserved.</span>
       <div style="display:flex; gap:1.5rem;">
-        <a href="privacy.html">Privacy policy</a>
-        <a href="contact.html">Contact</a>
+        <a href="/privacy">Privacy policy</a>
+        <a href="/contact">Contact</a>
       </div>
     </div>
   </div>
