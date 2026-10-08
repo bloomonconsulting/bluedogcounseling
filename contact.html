@@ -9,6 +9,50 @@
   <link rel="canonical" href="https://www.bluedogcounseling.com/contact" />
 
   <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* SimplePractice buttons, styled to match the site */
+    .bd-btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      justify-content: center;
+      width: 100%;
+      max-width: 680px;
+    }
+    .bd-btn-row a.spwidget-button {
+      flex: 1;
+      min-width: 240px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      border-radius: 60px;
+      font-family: var(--font-body);
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      white-space: nowrap;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+    .bd-btn-row a.bd-btn-primary {
+      background-color: var(--slate);
+      color: var(--mint);
+      border: 2px solid var(--slate);
+    }
+    .bd-btn-row a.bd-btn-secondary {
+      background-color: var(--mint);
+      color: var(--slate);
+      border: 2px solid var(--slate);
+    }
+    .bd-btn-row a.spwidget-button:hover,
+    .bd-btn-row a.spwidget-button:focus-visible {
+      opacity: 0.88;
+    }
+  </style>
 </head>
 <body>
 
@@ -20,105 +64,38 @@
     </div>
   </section>
 
-  <!-- CLIENTSECURE WIDGETS -->
+  <!-- SIMPLEPRACTICE WIDGETS -->
   <section class="bg-white" style="padding-block:4rem;">
     <div class="container" style="display:flex; flex-direction:column; align-items:center; gap:2rem;">
 
-      <!-- Button row -->
-      <div style="display:flex; flex-wrap:wrap; gap:1.25rem; justify-content:center; width:100%; max-width:680px;">
+      <div class="bd-btn-row">
 
-        <details id="cs-schedule" style="flex:1; min-width:240px;">
-          <summary style="
-            background-color: var(--slate);
-            color: var(--mint);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 1.5rem 2rem;
-            border-radius: 60px;
-            cursor: pointer;
-            font-family: var(--font-body);
-            font-weight: 500;
-            font-size: 1rem;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            list-style: none;
-            user-select: none;
-            white-space: nowrap;
-          ">Request an appointment</summary>
-        </details>
+        <!-- SimplePractice Appointment-Request Widget -->
+        <a href="https://bluedogcounseling.clientsecure.me"
+           class="spwidget-button bd-btn-primary"
+           data-spwidget-scope-id="d2fb3069-7949-4218-8dd0-6256d129c634"
+           data-spwidget-scope-uri="bluedogcounseling"
+           data-spwidget-application-id="7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b"
+           data-spwidget-type="OAR"
+           data-spwidget-scope-global
+           data-spwidget-autobind>Request an appointment</a>
 
-        <details id="cs-contact" style="flex:1; min-width:240px;">
-          <summary style="
-            background-color: var(--mint);
-            color: var(--slate);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 1.5rem 2rem;
-            border-radius: 60px;
-            cursor: pointer;
-            font-family: var(--font-body);
-            font-weight: 500;
-            font-size: 1rem;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            list-style: none;
-            user-select: none;
-            white-space: nowrap;
-            border: 2px solid var(--slate);
-          ">I have a question</summary>
-        </details>
+        <!-- SimplePractice Contact Form Widget -->
+        <a href="https://bluedogcounseling.clientsecure.me"
+           class="spwidget-button bd-btn-secondary"
+           data-spwidget-scope-id="d2fb3069-7949-4218-8dd0-6256d129c634"
+           data-spwidget-scope-uri="bluedogcounseling"
+           data-spwidget-application-id="7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b"
+           data-spwidget-channel="embedded_widget"
+           data-spwidget-type="Contact form"
+           data-spwidget-contact
+           data-spwidget-scope-global
+           data-spwidget-autobind>I have a question</a>
 
-      </div>
-
-      <!-- Expanded iframe area, only one shows at a time -->
-      <div id="cs-iframe-area" style="width:100%; max-width:680px; display:none;">
-        <iframe
-          id="cs-iframe"
-          src=""
-          width="100%"
-          height="850px"
-          frameborder="0"
-          scrolling="yes"
-          style="border:none; max-width:100%; overflow:hidden; margin-top:0.5rem;">
-        </iframe>
       </div>
 
     </div>
   </section>
-
-  <script>
-    (function () {
-      const schedule = document.getElementById('cs-schedule');
-      const contact  = document.getElementById('cs-contact');
-      const area     = document.getElementById('cs-iframe-area');
-      const iframe   = document.getElementById('cs-iframe');
-
-      const SCHEDULE_URL = 'https://bluedogcounseling.clientsecure.me/request-appointment';
-      const CONTACT_URL  = 'https://bluedogcounseling.clientsecure.me/contact-widget';
-
-      function openWidget(src, activeEl, otherEl) {
-        if (activeEl.open) {
-          iframe.src = src;
-          area.style.display = 'block';
-          otherEl.removeAttribute('open');
-        } else {
-          // Both closed: hide area
-          area.style.display = 'none';
-          iframe.src = '';
-        }
-      }
-
-      schedule.addEventListener('toggle', function () {
-        openWidget(SCHEDULE_URL, schedule, contact);
-      });
-
-      contact.addEventListener('toggle', function () {
-        openWidget(CONTACT_URL, contact, schedule);
-      });
-    })();
-  </script>
 
   <!-- CONTACT INFO STRIP -->
   <section class="bg-white" style="padding-block:3rem; border-top:1px solid var(--line);">
@@ -138,5 +115,7 @@
   </section>
 
   <script src="components.js"></script>
+  <!-- SimplePractice widget script (loaded once for both buttons) -->
+  <script src="https://widget-cdn.simplepractice.com/assets/integration-1.0.js"></script>
 </body>
 </html>
